@@ -18,10 +18,10 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../common/stylus/mixin.styl"
-  @import "../common/stylus/variable.styl"
   .header
     background-color $color-theme
-    position fixed
+    /*position fixed*/
+    position relative
     z-index 100
     left 0
     top 0

@@ -1,27 +1,19 @@
 <template>
   <div id="app">
     <router-view/>
+    <foot-bar v-if="$route.meta.isMenu"></foot-bar>
   </div>
-
 </template>
 <script>
+  import footBar from '@/components/footBar'
   export default {
-
+    name: 'App',
+    components: {
+      footBar
+    },
   }
-  //App接口
-  window['setAppInfo'] =function (uid,os) {
-    window.os=os
-    window.uid=uid
-  }
-  //H5接口
-  window.addEventListener('message',function(event){
-    let data = event.data
-    if(data.os !== undefined){
-      window.os=data.os
-      window.uid=data.uid
-    }
-  },false)
 </script>
-<style lang="stylus" rel="stylesheet/stylus" scoped>
-
+<style lang="stylus">
+#app
+  font-size 16px//默认字体大小
 </style>
