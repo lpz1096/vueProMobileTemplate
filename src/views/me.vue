@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-  import HeaderTop from '../components/headerTop'
+  import HeaderTop from '../components/HeaderTop'
   import {getCategoryList} from "../api";
 
   export default {

@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-  import headerTop from '../components/headerTop'
+  import headerTop from '../components/HeaderTop'
   export default {
     data() {
       return {
